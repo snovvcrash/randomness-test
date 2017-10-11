@@ -9,11 +9,12 @@
 /*
 	$ LD_LIBRARY_PATH=/home/username/gsl/lib/:${LD_LIBRARY_PATH}
 	$ export LD_LIBRARY_PATH
+	THEN
 	$ g++ -I/home/username/gsl/include/ -Wall -c -std=c++11 main.cxx
 	$ g++ -L/home/username/gsl/lib/ main.o -lgsl -lgslcblas -lm
 	$ ./a.out
 	OR
-	$ make GSL_INCLUDE='-I/home/username/gsl/include/' GSL_LIBRARY='-L/home/username/gsl/lib/ main.o -lgsl -lgslcblas -lm'
+	$ make GSL_INCLUDE='-I/home/username/gsl/include/' GSL_LIBRARY='-L/home/username/gsl/lib/ -lgsl -lgslcblas -lm'
 */
 
 #include <iostream>
